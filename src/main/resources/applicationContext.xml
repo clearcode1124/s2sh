@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+                    http://www.springframework.org/schema/context
+                    http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                   ">
+<!--    <context:property-placeholder location="classpath:jdbc.properties"/>-->
+<!--    <bean id="stat-filter" class="com.alibaba.druid.filter.stat.StatFilter" lazy-init="true">-->
+<!--        <description>状态过滤器</description>-->
+<!--        <property name="slowSqlMillis" value="3000"/>-->
+<!--        <property name="logSlowSql" value="true"/>-->
+<!--        <property name="mergeSql" value="true"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash; 配置数据源 &ndash;&gt;-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"-->
+<!--          destroy-method="close" init-method="init" lazy-init="true">-->
+<!--        <property name="driverClassName" value="${db.driverClass}"/>-->
+<!--        <property name="url" value="${db.url}"/>-->
+<!--        <property name="username" value="${db.username}"/>-->
+<!--        <property name="password" value="${db.password}"/>-->
+<!--        &lt;!&ndash; 初始化连接大小 &ndash;&gt;-->
+<!--        <property name="initialSize" value="50"/>-->
+<!--        &lt;!&ndash; 连接池最大数量 &ndash;&gt;-->
+<!--        <property name="maxActive" value="500"/>-->
+<!--        &lt;!&ndash; 连接池最小空闲 &ndash;&gt;-->
+<!--        <property name="minIdle" value="100"/>-->
+<!--        &lt;!&ndash; 获取连接最大等待时间 &ndash;&gt;-->
+<!--        <property name="maxWait" value="60000"/>-->
+<!--        &lt;!&ndash; &ndash;&gt;-->
+<!--        <property name="proxyFilters">-->
+<!--            <list>-->
+<!--                <ref bean="stat-filter"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="testWhileIdle" value="true"/>-->
+<!--        <property name="testOnBorrow" value="false"/>-->
+<!--        <property name="testOnReturn" value="false"/>-->
+<!--        <property name="validationQuery" value="SELECT 'x'"/>-->
+<!--        <property name="timeBetweenLogStatsMillis" value="60000"/>-->
+<!--        &lt;!&ndash; 配置一个连接在池中最小生存的时间，单位是毫秒 &ndash;&gt;-->
+<!--        <property name="minEvictableIdleTimeMillis" value="30000"/>-->
+<!--        &lt;!&ndash; 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 &ndash;&gt;-->
+<!--        <property name="timeBetweenEvictionRunsMillis" value="30000"/>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash; 定义Hibernate的sessionFactory &ndash;&gt;-->
+<!--    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">-->
+<!--        <property name="dataSource">-->
+<!--            <ref bean="dataSource"/>-->
+<!--        </property>-->
+<!--        <property name="hibernateProperties">-->
+<!--            <props>-->
+<!--                &lt;!&ndash; 数据库连接方言 &ndash;&gt;-->
+<!--                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>-->
+<!--                &lt;!&ndash; 在控制台输出SQL语句 &ndash;&gt;-->
+<!--                <prop key="hibernate.show_sql">true</prop>-->
+<!--                &lt;!&ndash; 格式化控制台输出的SQL语句 &ndash;&gt;-->
+<!--                <prop key="hibernate.format_sql">true</prop>-->
+<!--                <prop key="hibernate.connection.release_mode">after_statement</prop>-->
+<!--                <prop key="hibernate.hbm2ddl.auto">update</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--        &lt;!&ndash;Hibernate映射文件 &ndash;&gt;-->
+<!--        <property name="mappingLocations">-->
+<!--            <value>*.hbm.xml</value>-->
+<!--        </property>-->
+<!--    </bean>-->
+</beans>
